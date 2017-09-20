@@ -1,0 +1,64 @@
+.m-hometop{
+    height: 64px;
+    
+    .top-fix{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        display: -webkit-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+        width: 100%;
+        height: 64px;
+        background-color: #d43c33;
+        box-sizing: border-box;
+    }
+    
+    .topfl {
+        position: relative;
+        width: 142px;
+        height: 25px;
+    }
+    .topplh {
+        opacity: 0;
+        color: #d43c33;
+        display: none;
+    }
+    .topbton {
+        position: relative;
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 10px;
+        color: #fff;
+        font-size: 15px;
+    }
+    .topsvg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 142px;
+        height: 25px;
+    }
+    .topbton:after {
+        border-color: #fff;
+        border-radius: 37.5%/100%;
+            width: 200%;
+                border-width: 1px !important;
+    height: 200%;
+        transform: scale(.5);
+        border-width: 1px;
+            position: absolute;
+    z-index: 2;
+    content: "";
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    box-sizing: border-box;
+        transform-origin: top left;
+    border: 1px solid rgb(255,255,255);
+    }
+}
