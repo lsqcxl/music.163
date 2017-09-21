@@ -19,13 +19,7 @@ class SearchMusic extends React.Component {
         return (
             <div className="m-tabct">
 
-           		<hr/>
-            		<hr/>
-            		<hr/>
-            		<hr/>
-            		<hr/>
-            		<hr/>
-            		<hr/>
+           		
             		
 				<div className="tt">SEARCHmusic</div>
             </div>

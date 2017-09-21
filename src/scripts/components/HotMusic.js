@@ -11,13 +11,11 @@ class HotMusic extends React.Component {
         }
     }
     componentWillMount(){
-//		console.log("hot")
     }
     render(){ 
-//      console.log(this)
         return (
             <div className="m-tabct">
-				<div className="tt">HOTmusic</div>
+				
             </div>
         )
     }
