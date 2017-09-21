@@ -1,0 +1,74 @@
+{
+	"hasTaste": false,
+	"code": 200,
+	"category": 0,
+	"result": [
+		{
+			"id": 924534352,
+			"type": 0,
+			"name": "寻声计划Vol.2° | 让人眼前一亮的异质声线",
+			"copywriter": "编辑推荐：恐怕这些人才是真正的人生赢家吧",
+			"picUrl": "http://p1.music.126.net/Lv24XZBa-hzr49j7nKtsmA==/109951163027607302.jpg",
+			"canDislike": false,
+			"playCount": 404156.22,
+			"trackCount": 78,
+			"highQuality": false,
+			"alg": "featured"
+		}, {
+			"id": 832575329,
+			"type": 0,
+			"name": "说唱不一定要狠，拽就行了//Swag☻",
+			"copywriter": "编辑推荐：今天也要从头到脚满满的SWAG哦",
+			"picUrl": "http://p1.music.126.net/-ewiA_-U7tRVgm3zzDKvCg==/109951163028393490.jpg",
+			"canDislike": false,
+			"playCount": 440347.6,
+			"trackCount": 68,
+			"highQuality": false,
+			"alg": "featured"
+		}, {
+			"id": 864169661,
+			"type": 0,
+			"name": "8月[新·热]电子指南 | 跟着音乐去旅行",
+			"copywriter": "根据你喜欢的标签 欧美 推荐",
+			"picUrl": "http://p1.music.126.net/qSTA5-ZuUGBoZ08evW8V-Q==/109951163017993716.jpg",
+			"canDislike": true,
+			"playCount": 217319.2,
+			"trackCount": 510,
+			"highQuality": false,
+			"alg": "taste"
+		}, {
+			"id": 911642235,
+			"type": 0,
+			"name": "华语 | 我可以忘记一切，却忘不了你的出现",
+			"copywriter": "热门推荐",
+			"picUrl": "http://p1.music.126.net/d-8mqXQeaFrzVnhIpJZ_bw==/109951163024862695.jpg",
+			"canDislike": true,
+			"playCount": 5580705.5,
+			"trackCount": 100,
+			"highQuality": false,
+			"alg": "cityLevel_unknow"
+		}, {
+			"id": 912256078,
+			"type": 0,
+			"name": "R&B柔情男嗓丨萦绕心间的温暖细腻",
+			"copywriter": "热门推荐",
+			"picUrl": "http://p1.music.126.net/2Ru-VwrBY0k3ROEcI7poyQ==/109951163022926005.jpg",
+			"canDislike": true,
+			"playCount": 3178095.5,
+			"trackCount": 113,
+			"highQuality": false,
+			"alg": "cityLevel_unknow"
+		}, {
+			"id": 914759464,
+			"type": 0,
+			"name": "「致过去」关于我和你的故事 到此为止",
+			"copywriter": "热门推荐",
+			"picUrl": "http://p1.music.126.net/q1NrWVdK9sFmizOoL0pI7w==/109951163025047328.jpg",
+			"canDislike": true,
+			"playCount": 2393595.2,
+			"trackCount": 120,
+			"highQuality": false,
+			"alg": "cityLevel_unknow"
+		}
+	]
+}
