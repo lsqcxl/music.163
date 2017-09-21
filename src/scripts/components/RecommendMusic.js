@@ -15,15 +15,9 @@ class RecommendMusic extends React.Component {
     render(){ 
 //      console.log(this)
         return (
-            <div className="full-height">
+            <div className="m-tabct">
 
-           		<hr/>
-            		<hr/>
-            		<hr/>
-            		<hr/>
-            		<hr/>
-            		<hr/>
-            		<hr/>
+           		
             		
 				<div className="tt">这是一个网易云music</div>
             </div>

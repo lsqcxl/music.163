@@ -1,10 +1,10 @@
 .m-hometop {
-    height: 64px;
+    position: fixed;
+    height: 104px;
+    width: 100%;
+    z-index: 100;
+    top: 0;
     .top-fix {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 100;
         display: -webkit-box;
         display: flex;
         justify-content: space-between;
@@ -60,10 +60,6 @@
         border: 1px solid rgb(255, 255, 255);
     }
     .u-tab {
-        position: fixed;
-        top: 64px;
-        left: 0;
-        z-index: 100;
         display: flex;
         -webkit-box-pack: center;
         justify-content: center;

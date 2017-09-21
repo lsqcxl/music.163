@@ -16,16 +16,7 @@ class HotMusic extends React.Component {
     render(){ 
 //      console.log(this)
         return (
-            <div className="full-height">
-            		
-            		<hr/>
-            		<hr/>
-            		<hr/>
-            		<hr/>
-            		<hr/>
-            		<hr/>
-            		<hr/>
-            		
+            <div className="m-tabct">
 				<div className="tt">HOTmusic</div>
             </div>
         )
