@@ -2,7 +2,7 @@
 import NavMusic from './NavMusic'
 
 
-class RecommendMusic extends React.Component {   
+class SearchMusic extends React.Component {   
     constructor(props,context){
         super(props,context)
 
@@ -11,6 +11,8 @@ class RecommendMusic extends React.Component {
         }
     }
     componentWillMount(){
+//		console.log("search")
+		
     }
     render(){ 
 //      console.log(this)
@@ -25,16 +27,16 @@ class RecommendMusic extends React.Component {
             		<hr/>
             		<hr/>
             		
-				<div className="tt">这是一个网易云music</div>
+				<div className="tt">SEARCHmusic</div>
             </div>
         )
     }
 }
 //定义默认属性
-RecommendMusic .defaultProps={
+SearchMusic .defaultProps={
 
 }
 
 
 
-export default RecommendMusic
+export default SearchMusic

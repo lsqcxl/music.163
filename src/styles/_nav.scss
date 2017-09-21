@@ -1,7 +1,6 @@
-.m-hometop{
+.m-hometop {
     height: 64px;
-    
-    .top-fix{
+    .top-fix {
         position: fixed;
         top: 0;
         left: 0;
@@ -16,7 +15,6 @@
         background-color: #d43c33;
         box-sizing: border-box;
     }
-    
     .topfl {
         position: relative;
         width: 142px;
@@ -46,19 +44,98 @@
     .topbton:after {
         border-color: #fff;
         border-radius: 37.5%/100%;
-            width: 200%;
-                border-width: 1px !important;
-    height: 200%;
+        width: 200%;
+        border-width: 1px !important;
+        height: 200%;
         transform: scale(.5);
         border-width: 1px;
-            position: absolute;
-    z-index: 2;
-    content: "";
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    box-sizing: border-box;
+        position: absolute;
+        z-index: 2;
+        content: "";
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        box-sizing: border-box;
         transform-origin: top left;
-    border: 1px solid rgb(255,255,255);
+        border: 1px solid rgb(255, 255, 255);
+    }
+    .u-tab {
+        position: fixed;
+        top: 64px;
+        left: 0;
+        z-index: 100;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        background: #fff;
+    }
+    .u-tab .tabtitle {
+        -webkit-box-flex: 1;
+        flex: 1;
+        width: 33.3%;
+        height: 100%;
+        text-align: center;
+        cursor: pointer;
+    }
+    .tabtitle {
+        -webkit-box-flex: 1;
+        flex: 1;
+        width: 33.3%;
+        height: 100%;
+        text-align: center;
+        cursor: pointer;
+        list-style: none;
+    }
+    .tabtxt {
+        position: relative;
+        display: inline-block;
+        height: 100%;
+        padding: 0 5px;
+        box-sizing: border-box;
+        color: #333;
+        font-size: 15px;
+        line-height: 40px;
+    }
+    .f-bd:after {
+        position: absolute;
+        z-index: 2;
+        content: "";
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        -webkit-transform-origin: top left;
+        transform-origin: top left;
+        border: 0 solid rgba(0, 0, 0, .1);
+        border-bottom-width: 1px;
+        border-color: #ccc;
+        z-index: 0;
+    }
+    
+    
+    
+    .redactive{
+        color: #d33a31;
+    }
+    .tabtxt:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        z-index: 3;
+        width: 100%;
+        -webkit-transform: scaleY(.5);
+        transform: scaleY(.5);
+        background: #d33a31;
+    }
+    .bor:after{
+        
+        height: 4px;
     }
 }

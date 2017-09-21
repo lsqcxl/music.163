@@ -27,7 +27,7 @@ module.exports = {
             }
         },
 		contentBase:'./build',//服务器要在哪个地方开启，默认是在webpack.config.js的路径中
-		port:8000,//端口
+		port:5000,//端口
 		host:'localhost',//域名
 		historyApiFallback:true//是否使用history的go方法
     },
