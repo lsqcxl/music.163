@@ -77,7 +77,7 @@ class RecommendMusic extends React.Component {
 				)
 			})
 		}
-		console.log(this.state.newsongs)
+//		console.log(this.state.newsongs)
 		return arr
 
 	}

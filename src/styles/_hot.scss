@@ -1,0 +1,118 @@
+.hotTop {
+    width: 100%;
+    height: 146px;
+    background: url("http://s3.music.126.net/m/s/img/hot_music_bg_2x.jpg?f01a252389c26bcf016816242eaa6aee") no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    .hotTop-icon {
+        margin-top: 25px;
+        background: url("http://s3.music.126.net/m/s/img/index_icon_2x.png?5207a28c3767992ca4bb6d4887c74880") no-repeat;
+        background-size: 166px 97px;
+        width: 142px;
+        height: 67px;
+        background-position: -24px -30px;
+    }
+    p {
+        color: white;
+        margin-top: 10px;
+        font-size: 10px;
+    }
+}
+
+.hotSongs {
+    a {
+        color: #333;
+        width: 100%;
+        display: block;
+        height: 55px;
+        width: 100%;
+        display: flex;
+        .songInd {
+            padding-left: 10px;
+            color: #999;
+            width: 28px;
+            font-size: 17px;
+            line-height: 55px;
+            font-weight: bold;
+        }
+        .red{
+            color: #df3436;
+        }
+        .songBox {
+            flex: 1;
+            padding: 6px 0;
+            border-bottom: 1px solid #f5f5f5;
+            display: flex;
+            
+            .icon{
+                    background: url("http://s3.music.126.net/m/s/img/index_icon_2x.png?5207a28c3767992ca4bb6d4887c74880") no-repeat;
+                    background-size: 166px 97px;
+                }
+            
+            .songBox-left {
+                flex: 1;
+                h5 {
+                    font-size: 17px;
+                    font-weight: normal;
+                    overflow: hidden;
+                    
+                    span{
+                        float: left;
+                    }
+                    
+                    .more{
+                        color: #888;
+                        width: 210px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                }
+                p {
+                    font-size: 12px;
+                    color: #888;
+                    overflow: hidden;
+                    
+                    .icon-SQ{
+                        
+                            display: inline-block;
+                            width: 12px;
+                            height: 8px;
+                            margin-right: 4px;
+                    }
+                }
+            }
+            .songBox-right {
+                width: 42px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                .icon-play{
+                        width: 22px;
+                        height: 22px;
+                        background-position: -24px 0;
+                }
+            }
+        }
+    }
+}
+.hotMore{
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    
+    span{
+        display: inline-block;
+        color: #999;
+        padding-right: 14px;
+        font-size: 14px;
+        background: url("/img/arrow.svg") 100% no-repeat;
+        background-size: 7px 12px;
+    }
+}

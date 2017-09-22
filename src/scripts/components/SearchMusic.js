@@ -11,17 +11,13 @@ class SearchMusic extends React.Component {
         }
     }
     componentWillMount(){
-//		console.log("search")
-		
     }
     render(){ 
-//      console.log(this)
         return (
             <div className="m-tabct">
-
-           		
-            		
-				<div className="tt">SEARCHmusic</div>
+				<form className="searForm">
+					<input />
+				</form>
             </div>
         )
     }
