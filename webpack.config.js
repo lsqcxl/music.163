@@ -15,10 +15,10 @@ module.exports = {
                 changeOrigin:true,
                 secure:false
             },
-            '/api':{
-                target:'https://m.toutiao.com',
+            '/songlist':{
+                target:'https://c.y.qq.com',
                 changeOrigin:true,
-                pathRewrite: {'^/api' : ''}
+                pathRewrite: {'^/songlist' : ''}
             },
             '/ele':{
                 target:'https://restapi.ele.me',
