@@ -19,7 +19,6 @@ class RootComponent extends React.Component {
     render(){
         return (
             <div className="full-height"  >
-            		<NavMusic  pathname={this.props.location.pathname}/>
                {this.props.children}
             </div>
         )

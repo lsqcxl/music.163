@@ -145,6 +145,7 @@ class SearchMusic extends React.Component {
 	render() {
 		return(
 			<div className="m-tabct">
+			  <NavMusic  pathname={this.props.location.pathname}/>
 				<form className="searForm">
 					<div className="searBox">
 						<i></i>
