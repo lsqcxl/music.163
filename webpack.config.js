@@ -15,6 +15,11 @@ module.exports = {
                 changeOrigin:true,
                 secure:false
             },
+            '/login':{
+                target:'http://datainfo.duapp.com',
+                changeOrigin:true,
+                pathRewrite:{'^/song' : ''}
+            },
             '/songlist':{
                 target:'https://c.y.qq.com',
                 changeOrigin:true,

@@ -34,11 +34,11 @@ class SearchMusic extends React.Component {
 			this.setState({
 				isShow: true
 			})
+	 		this.addHistory(e.target.value)		
 		}
 	}
-
-	selectSong(song){
-//		console.log(1,this.state.songsHistory)
+	
+	addHistory(song){
 		let arr = this.state.songsHistory
 		let num = arr.indexOf(song)
 		if(num>-1){  //如果已存在，则删除原数据的位置
@@ -47,13 +47,19 @@ class SearchMusic extends React.Component {
 		arr.unshift(song)
 		//修改状态里的song并存入本地存储中
 		this.setState({
-			song:song,
-			isShow:true,
 			songsHistory:arr
 		})
 		//把数组变成字符串存入localStorage!!
 		localStorage.setItem("songsHistory",JSON.stringify(arr))
-		
+	}
+
+	selectSong(song){
+//		console.log(1,this.state.songsHistory)
+		this.setState({
+			song:song,
+			isShow:true,
+		})
+	 	this.addHistory(song)		
 		//console.log(2,this.state.songsHistory)
 		//请求新的歌单
 		this.searchSongs(song)
@@ -186,6 +192,8 @@ class SearchMusic extends React.Component {
 	render() {
 		return(
 			<div className="m-tabct">
+			    <NavMusic  pathname={this.props.location.pathname}/>
+			
 				<form className="searForm">
 					<div className="searBox">
 						<i></i>

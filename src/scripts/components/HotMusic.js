@@ -1,4 +1,4 @@
-
+import NavMusic from './NavMusic'
 import Fetch from '../modules/fetch'
 
 class HotMusic extends React.Component {   
@@ -46,6 +46,7 @@ class HotMusic extends React.Component {
     render(){ 
         return (
             <div className="m-tabct">
+        	         <NavMusic  pathname={this.props.location.pathname}/>
 				<div className="hotTop">
 					<div className="hotTop-icon">
 					</div>
@@ -55,7 +56,7 @@ class HotMusic extends React.Component {
 					{this.showHotSongs()}
 				</div>
 				<div className="hotMore">
-					<span>查看完整榜单</span>
+					< a href="#/applink"> <span>查看完整榜单</span></a>
 				</div>
             </div>
         )

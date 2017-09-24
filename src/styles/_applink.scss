@@ -1,0 +1,38 @@
+.app-main{
+        width: 100%;
+    height: 100%;
+    .m-uvl {
+    width: 100%;
+    height: 100%;
+    background: url(http://p3.music.126.net/3PJacreCq-eDuVDU4RFTQA==/18935789253812331.jpg) no-repeat 0 center;
+    background-size: 100% auto!important;
+}
+.wrap{
+    margin-top: -40px;
+    position: absolute!important;
+    top: 50%;
+    left: 50%;
+        transform: translate(-50%,-50%);
+        
+}
+.logo {
+    margin: 0 auto;
+    width: 108px;
+    height: 108px;
+    background: url(http://p3.music.126.net/tBTNafgjNnTL1KlZMt7lVA==/18885211718935735.jpg) no-repeat 0 0;
+    background-size: 100% auto;
+}
+a{
+        margin-top: 40px;
+    display: block;
+    width: 188px;
+    height: 46px;
+    line-height: 46px;
+    background: #311412;
+    border: 1px solid #7c6a69;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+}

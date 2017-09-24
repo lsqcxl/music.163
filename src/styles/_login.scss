@@ -1,0 +1,78 @@
+.login-box{
+     .logo {
+        padding-top: 16.9%;
+    }
+    .logosvg ,.content-block{
+        display: block;
+        margin: 0 auto;
+        width: 230px;
+        height: 44px;
+    }
+    .logi{
+         display: block;
+        margin: 0 auto;
+        width: 230px;
+        margin-top: 20px;
+        text-align: center;
+        color: #888888;
+        font-size: 20px;
+    }
+    .list-block{
+        margin: 0 auto;
+        width: 230px;
+        padding: 20px;
+        input{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding-left: 15px;
+            border: 1px solid skyblue;
+            border-radius: 10px;
+            height: 25px;
+            outline: none;
+        }
+    }
+    .row{
+        overflow: hidden;
+    }
+    .col-50:first-child{
+        margin-left: 0;
+    }
+    .col-50{
+        width: 80px;
+        background-color: lightskyblue;
+        border-radius: 20px;
+        line-height: 40px;
+        text-align: center;
+        height: 40px;
+        margin-left: 20px;
+        float: left;
+        color: black;
+        cursor: pointer;
+    }
+    .red{
+        background-color:skyblue;
+    }
+    .green{
+        background-color: skyblue;
+        
+    }
+    .register{
+        margin-top: 20px;
+        background-color: lightskyblue;
+        width: 200px;
+        font-size: 14px;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 10px;
+        color: #999;
+    }
+    .whitered{
+        color: red;
+    }
+    .uname,.upass{
+        display: none;
+    }
+    
+    
+}
