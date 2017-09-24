@@ -393,436 +393,55 @@ a {
     background: url("/img/arrow.svg") 100% no-repeat;
     background-size: 7px 12px; }
 
-.play-list .list-header {
-  position: relative;
-  padding: 30px 10px 30px 15px;
-  overflow: hidden; }
-
-.play-list .list-h-1 {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50%;
-  transform: scale(1.5); }
-
-.play-list .list-h-1:after {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-  content: " ";
-  background-color: rgba(0, 0, 0, 0.7); }
-
-.play-list .list-wrap {
-  display: flex;
-  position: relative;
-  z-index: 2; }
-
-.play-list .list-l {
-  width: 126px;
-  height: 126px;
-  position: relative;
-  background-color: #e2e2e3; }
-
-.play-list .list-img {
-  width: 100%;
-  vertical-align: middle; }
-
-.play-list .list-icon {
-  position: absolute;
-  z-index: 3;
-  top: 10px;
-  left: 0;
-  padding: 0 8px;
-  height: 17px;
-  color: #fff;
-  font-size: 9px;
-  text-align: center;
-  line-height: 17px;
-  background-color: rgba(217, 48, 48, 0.8);
-  border-top-right-radius: 17px;
-  border-bottom-right-radius: 17px; }
-
-.play-list .list-num {
-  position: absolute;
-  right: 2px;
-  top: 0;
-  z-index: 3;
-  padding-left: 15px;
-  color: #fff;
-  font-size: 12px;
-  background-position: 0;
-  background-repeat: no-repeat;
-  background-size: 11px 10px;
-  text-shadow: 1px 0 0 rgba(0, 0, 0, 0.15);
-  background-image: url(/img/listen.svg);
-  font-style: normal; }
-
-.play-list .list-l:after {
-  content: " ";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 18px;
-  z-index: 2;
-  background-image: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.2)); }
-
-.play-list .list-r {
-  -webkit-box-flex: 1;
-  flex: 1 1 auto;
-  width: 1%;
-  margin-left: 16px; }
-
-.play-list .list-h2 {
-  padding-top: 1px;
-  font-size: 17px;
-  line-height: 1.3;
-  color: #fefefe;
-  height: 44px;
-  display: -webkit-box;
-  -webkit-box-pack: center;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  word-wrap: break-word;
-  word-break: break-all;
-  white-space: normal;
-  font-weight: normal; }
-
-.play-list .list-auth {
-  display: block;
-  position: relative;
-  margin-top: 20px;
-  color: rgba(255, 255, 255, 0.7);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-break: normal;
-  font-weight: normal; }
-
-.play-list .list-ave {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  vertical-align: middle;
-  margin-right: 5px;
-  position: relative; }
-
-.play-list .list-ave-img {
-  border-radius: 50%;
-  width: 100%;
-  vertical-align: middle; }
-
-.play-list .list-ave-xiao {
-  background-position: -40px 0;
-  position: absolute;
-  right: -5px;
-  bottom: 0;
-  width: 12px;
-  height: 12px;
-  background-image: url(//s3.music.126.net/m/s/img/usericn_2x.png?6423c06…);
-  background-repeat: no-repeat;
-  background-size: 75px auto; }
-
-.play-list .list-intro {
-  position: relative;
-  margin: 0 10px 0 15px;
-  padding-top: 10px;
-  line-height: 19px;
-  color: #666;
-  font: 14px/1.5 Helvetica, sans-serif; }
-
-.play-list .intro-1 {
-  margin-bottom: 10px;
-  line-height: 20px;
-  margin-right: -10px; }
-
-.play-list .eem {
-  display: inline-block;
-  margin-right: 10px;
-  padding: 1px 8px;
-  font-size: 12px;
-  position: relative;
-  font-style: normal; }
-
-.play-list .eem:after {
-  width: 200%;
-  height: 200%;
-  transform: scale(0.5);
-  border-radius: 9999px;
-  position: absolute;
-  z-index: 2;
-  content: "";
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  box-sizing: border-box;
-  transform-origin: top left;
-  border: 0 solid rgba(0, 0, 0, 0.1);
-  border-width: 1px; }
-
-.play-list .intro-2 {
-  position: relative;
-  padding-bottom: 18px;
-  line-height: 19px;
-  color: #666; }
-
-.play-list .intro-3 {
-  -webkit-line-clamp: 3;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  word-wrap: break-word;
-  word-break: break-all;
-  white-space: normal; }
-
-.play-list .play-list h3 {
-  height: 23px;
-  line-height: 23px;
-  padding: 0 10px;
-  font-size: 12px;
-  color: #666;
-  background-color: #eeeff0; }
-
-.play-list .play-list .usong {
-  display: flex; }
-
-.play-list .play-list .usong-num {
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  width: 40px;
-  font-size: 17px;
-  color: #999; }
-
-.play-list .play-list .usong-r {
-  -webkit-box-flex: 1;
-  flex: 1 1 auto;
-  position: relative;
-  display: flex; }
-
-.play-list .play-list .usong-r-l {
-  -webkit-box-flex: 1;
-  flex: 1 1 auto;
-  padding: 6px 0;
-  width: 0; }
-
-.play-list .play-list .usong-r-l-1 {
-  font-size: 17px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-break: normal; }
-
-.play-list .play-list .usong-r-l-2 {
-  font-size: 12px;
-  color: #888;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-break: normal; }
-
-.play-list .play-list .usong-r-r {
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  padding: 0 10px; }
-  .play-list .play-list .usong-r-r span {
-    display: inline-block;
-    width: 22px;
-    height: 22px;
-    background: url(//s3.music.126.net/m/s/img/index_icon_2x.png?5207a28…) no-repeat;
-    background-size: 166px 97px;
-    background-position: -24px 0; }
-
-.play-list .play-list .usong-r:after {
-  width: 200%;
-  height: 200%;
-  -webkit-transform: scale(0.5);
-  transform: scale(0.5);
-  border-bottom-width: 1px;
-  position: absolute;
-  z-index: 2;
-  content: "";
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  box-sizing: border-box;
-  transform-origin: top left;
-  border: 0 solid rgba(0, 0, 0, 0.1);
-  border-bottom-width: 1px; }
-
-.play-list .u-smtitle {
-  height: 23px;
-  line-height: 23px;
-  padding: 0 10px;
-  font-size: 12px;
-  color: #666;
-  background-color: #eeeff0; }
-
-.play-list .li-comment {
-  display: flex;
-  padding: 8px 0 0 10px; }
-  .play-list .li-comment .li-comment-l {
-    width: 30px;
-    -webkit-box-flex: 0;
-    flex: 0 0 auto; }
-  .play-list .li-comment .li-commit-l-1 {
+.searForm {
+  padding: 15px 10px;
+  background: #fbfcfd;
+  border-bottom: 1px solid #f5f5f5; }
+  .searForm .searBox {
     position: relative;
-    width: 100%; }
-  .play-list .li-comment .li-commit-l-1-img {
     width: 100%;
-    vertical-align: middle;
-    border-radius: 50%; }
-  .play-list .li-comment .li-comment-r {
-    -webkit-box-flex: 1;
-    flex: 1 1 auto;
-    width: 1%;
-    margin-left: 10px;
-    padding-right: 10px;
-    position: relative; }
-  .play-list .li-comment .li-comment-r:after {
-    width: 200%;
-    height: 200%;
-    transform: scale(0.5);
-    border-bottom-width: 1px;
-    position: absolute;
-    z-index: 2;
-    content: "";
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    box-sizing: border-box;
-    transform-origin: top left;
-    border: 0 solid rgba(0, 0, 0, 0.1);
-    border-bottom-width: 1px; }
-  .play-list .li-comment .comt_ft {
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center; }
-  .play-list .li-comment .comt_ffl {
-    -webkit-box-flex: 1;
-    flex: 1 1 auto;
-    width: 1%;
-    line-height: 1.2; }
-  .play-list .li-comment .commt_nick {
-    padding-top: 2px;
-    font-size: 13px;
-    color: #666; }
-    .play-list .li-comment .commt_nick span {
-      font-size: 13px;
-      color: #666; }
-  .play-list .li-comment .commt-time {
-    margin-top: 2px;
-    font-size: 12px;
-    color: #999; }
-  .play-list .li-comment .comt-ffr {
-    margin-left: 10px;
-    -webkit-box-flex: 0;
-    flex: 0 0 auto;
-    text-align: right; }
-    .play-list .li-comment .comt-ffr span {
-      padding: 3px 20px 0 0;
-      color: #666;
-      background: url(/img/good.png) 100% 0 no-repeat;
-      background-size: 15px;
-      font-size: 12px; }
-  .play-list .li-comment .f-brk {
-    position: relative;
-    margin-top: 8px;
-    padding-bottom: 8px;
-    word-wrap: break-word;
-    word-break: break-all;
-    white-space: normal; }
-    .play-list .li-comment .f-brk span {
-      word-wrap: break-word;
-      word-break: break-all;
-      white-space: normal;
-      font: 14px/1.5 Helvetica, sans-serif;
-      color: #333;
-      outline: 0; }
-
-.play-list .u-comtmore {
-  position: relative;
-  text-align: center;
-  padding: 18px 0;
-  line-height: 1;
-  margin-bottom: 54px; }
-
-.play-list .u-comtmore .comt_more {
-  display: inline-block;
-  color: #999;
-  padding-right: 14px;
-  background: url(/img/arrow.svg) 100% no-repeat;
-  background-size: 7px 12px; }
-
-.play-list .u-footer {
-  position: fixed;
-  background-color: #fff;
-  padding: 7px 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 10; }
-  .play-list .u-footer .footer-wrap {
-    max-width: none;
+    height: 30px;
     padding: 0 30px;
-    display: flex;
-    margin: 0 auto; }
-    .play-list .u-footer .footer-wrap span {
-      margin-left: 0;
-      height: 40px;
-      line-height: 40px;
-      font-size: 16px;
-      position: relative;
-      -webkit-box-flex: 1;
-      flex: 1 1 auto;
-      width: 1%;
-      border-radius: 36px;
-      color: #fff;
-      background-color: #d43b32;
-      border-color: #d43b32;
-      display: block;
-      padding: 0 6px;
-      border: 1px solid #adadad;
-      text-align: center;
-      box-sizing: border-box; }
-    .play-list .u-footer .footer-wrap span:before {
-      content: "";
+    box-sizing: border-box;
+    background: #ebecec;
+    border-radius: 30px; }
+    .searForm .searBox i {
       display: inline-block;
-      position: relative;
-      top: 5px;
-      width: 21px;
-      height: 23px;
-      background: url(/img/logo.svg) no-repeat;
+      vertical-align: middle;
+      width: 13px;
+      height: 13px;
+      background: url("/img/sear.svg") no-repeat 0 0;
       background-size: contain;
-      margin-right: 4px; }
+      position: absolute;
+      left: 8px;
+      top: 9px; }
+    .searForm .searBox input {
+      width: 100%;
+      height: 30px;
+      line-height: 18px;
+      background: transparent;
+      font-size: 14px;
+      color: #333;
+      border: none;
+      outline: none; }
 
-.play-list .u-footer:after {
-  width: 200%;
-  height: 200%;
-  transform: scale(0.5);
-  border-top-width: 1px;
-  position: absolute;
-  z-index: 2;
-  content: "";
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  box-sizing: border-box;
-  transform-origin: top left;
-  border: 0 solid rgba(0, 0, 0, 0.1);
-  border-top-width: 1px; }
+.hotSearch {
+  padding: 15px 10px 0; }
+  .hotSearch h5 {
+    font-size: 12px;
+    line-height: 12px;
+    color: #666;
+    font-weight: normal; }
+  .hotSearch ul {
+    margin: 10px 0 7px; }
+    .hotSearch ul li {
+      display: inline-block;
+      height: 32px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+      padding: 0 14px;
+      font-size: 14px;
+      line-height: 32px;
+      color: #333;
+      border: 1px solid #ddd;
+      border-radius: 30px; }

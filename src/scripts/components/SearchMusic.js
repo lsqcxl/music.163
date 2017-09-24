@@ -9,11 +9,13 @@ class SearchMusic extends React.Component {
 			song: '',
 			searchSongs: [],
 			isShow: false,
-			hotSearch:[]
+			hotSearch:[],
+			songsHistory:JSON.parse(localStorage.getItem("songsHistory"))||[]
 		}
 	}
 	
 	changeSong(e) {
+//		console.log(11,this.state.song)
 		this.setState({
 			song: e.target.value
 		})
@@ -22,6 +24,7 @@ class SearchMusic extends React.Component {
 				isShow: false
 			})
 		}
+//		console.log(22,this.state.song)
 	}
 	
 	enterSong(e) {
@@ -35,10 +38,36 @@ class SearchMusic extends React.Component {
 	}
 
 	selectSong(song){
+//		console.log(1,this.state.songsHistory)
+		let arr = this.state.songsHistory
+		let num = arr.indexOf(song)
+		if(num>-1){  //如果已存在，则删除原数据的位置
+			arr.splice(num,1)
+		}
+		arr.unshift(song)
+		//修改状态里的song并存入本地存储中
 		this.setState({
 			song:song,
-			isShow:true
+			isShow:true,
+			songsHistory:arr
 		})
+		//把数组变成字符串存入localStorage!!
+		localStorage.setItem("songsHistory",JSON.stringify(arr))
+		
+		//console.log(2,this.state.songsHistory)
+		//请求新的歌单
+		this.searchSongs(song)
+	}
+	
+	removeSong(song,e){
+		e.stopPropagation();
+		let arr = this.state.songsHistory;
+		let num = arr.indexOf(song)
+		arr.splice(num,1)
+		this.setState({
+			songsHistory:arr
+		})
+		localStorage.setItem("songsHistory",JSON.stringify(arr))
 	}
 	
 	close(){
@@ -47,7 +76,9 @@ class SearchMusic extends React.Component {
 		})
 	}
 	
-	searchSongs(){
+	searchSongs(song){
+		//可根据传入的歌曲或者状态里的歌曲进行数据请求
+		var song = song || this.state.song
 		let that = this
 		Fetch.Get("http://localhost:5000/songlist/soso/fcgi-bin/search_for_qq_cp", {
 			g_tk: '677018037',
@@ -58,7 +89,7 @@ class SearchMusic extends React.Component {
 			notice: '0',
 			platform: "h5",
 			needNewCode: '1',
-			w: that.state.song,
+			w: song,
 			zhidaqu: '1',
 			catZhida: '1',
 			t: '0',
@@ -93,7 +124,7 @@ class SearchMusic extends React.Component {
 		
 	showSongsAll() {
 		let arr = []
-		if(this.state.searchSongs.length > 2) {
+		if(this.state.searchSongs) {
 			this.state.searchSongs.forEach((item, i) => {
 				arr.push(<a>
 						<div className="songBox">
@@ -119,10 +150,12 @@ class SearchMusic extends React.Component {
 			})
 		})
 	}
+	
 	showHotSearch(){
 		let arr = [];
 		let {hotSearch} = this.state;
-		if(hotSearch.length>2){
+		
+		if(hotSearch){
 			hotSearch.forEach((item,i)=>{
 				arr.push(<li onClick={this.selectSong.bind(this,item.first)}><a>{item.first}</a></li>)
 			})
@@ -130,22 +163,29 @@ class SearchMusic extends React.Component {
 		return arr
 	}
 	
+	showSongsHistory(){
+		let {songsHistory} = this.state;
+		let arr = [];  //onClick={this.selectSong.bind(this,item)}
+		if(songsHistory.length){
+			songsHistory.forEach((item,i)=>{
+				arr.push(<li onClick={this.selectSong.bind(this,item)}><i></i><div><span >{item}</span><figure onClick={this.removeSong.bind(this,item)}><e></e></figure></div></li>)
+			})
+		}
+		return arr
+	}
+	
 	componentWillMount() {
 		this.getHotSearch()
-		console.log('componentWillMount')
 		
 	}
-//	shouldComponentUpdate(){
-//	}
 	componentDidUpdate(){
-//		this.searchSongs()
-		console.log('componentDidUpdate')
+//		this.searchSongs()  //会死循环
+//		console.log('componentDidUpdate')
 	}
 	
 	render() {
 		return(
 			<div className="m-tabct">
-			  <NavMusic  pathname={this.props.location.pathname}/>
 				<form className="searForm">
 					<div className="searBox">
 						<i></i>
@@ -156,9 +196,14 @@ class SearchMusic extends React.Component {
 				{this.state.song?
 						(this.state.isShow?<div className="songsList">{this.showSongsAll()}</div>
 							:<div className="songsPart"><h3>搜索"{this.state.song}"</h3><ul>{this.showSongsPart()}</ul></div>)
-				:<div className="hotSearch">
-					<h5>热门搜索</h5>
-					<ul>{this.showHotSearch()}</ul>
+				:<div>
+					<div className="hotSearch">
+						<h5>热门搜索</h5>
+						<ul>{this.showHotSearch()}</ul>
+					</div>
+					<ol className="songsHistory">
+						{this.showSongsHistory()}
+					</ol>
 				</div>
 			}
             </div>

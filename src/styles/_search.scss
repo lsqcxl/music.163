@@ -73,7 +73,47 @@
             border-radius: 30px;
         }
     }
-}
+  }  
+    .songsHistory{
+        li{
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            height: 45px;
+            
+            i{
+                margin: 0 10px;
+                width: 15px;
+                height: 15px;
+                background: url("/img/history.svg") no-repeat ;
+                background-size: contain;
+            }
+            div{
+                flex: 1;
+                display: flex;
+                height: 45px;
+                border-bottom: 1px solid #efefef;
+                align-items: center;
+                span{
+                    flex: 1;
+                    font-size: 14px;
+                }
+                figure{
+                        width: 32px;
+                        height: 32px;
+                        line-height: 32px;
+                    e{
+                        display: inline-block;
+                        margin-left: 2px;
+                        width: 12px;
+                        height: 13px;
+                        background: url("/img/remove.svg") no-repeat ;
+                        background-size: contain;
+                    }
+                }
+            }
+        }
+    }
 .songsPart {
     h3 {
         height: 50px;

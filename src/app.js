@@ -10,8 +10,6 @@ import {Router,Route,hashHistory,IndexRedirect,IndexRoute} from 'react-router'
 import RecommendMusic from './scripts/components/RecommendMusic'
 import HotMusic from './scripts/components/HotMusic'
 import SearchMusic from './scripts/components/SearchMusic'
-import PlayList from './scripts/components/playlist'
-import AppLink from './scripts/components/applink'
 
 
 
@@ -24,8 +22,6 @@ ReactDOM.render(
             <IndexRoute component={RecommendMusic}/>
 			<Route path="hot"        component={HotMusic}></Route>
             <Route path="search"  component={SearchMusic}></Route>
-            <Route path="playlist/:id"  component={PlayList}></Route>
-            <Route path="applink"  component={AppLink}></Route>
             <Route path="*"            component={RecommendMusic}></Route>
 
         </Route>
