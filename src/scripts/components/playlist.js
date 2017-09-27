@@ -1,4 +1,5 @@
 import Fetch from '../modules/fetch'
+import {Link} from 'react-router'
 
 class PlayList extends React.Component {   
     constructor(props,context){
@@ -48,21 +49,23 @@ class PlayList extends React.Component {
    			})
    			//遍历表单列表
    			let usong=[]
-   			let usongs=list.tracks
+   						
+   			let usongs=list.tracks  
    			usongs.forEach(function(val,i){
    				usong.push(
-   					<li className="usong">
-   						<div className="usong-num">{i}</div>
-   						<div className="usong-r">
-   							<div className="usong-r-l">
-   								<div className="usong-r-l-1">{val.name}</div>
-   								<div className="usong-r-l-2">{val.ar[0].name}-{val.al.name}</div>
-   							</div>
-   							<div className="usong-r-r">
-   								<span></span>
-   							</div>
-   						</div>
-   					</li>
+   					<Link to={"/song/"+val.id} className="usong">
+
+	   						<div className="usong-num">{i}</div>
+	   						<div className="usong-r">
+	   							<div className="usong-r-l">
+	   								<div className="usong-r-l-1">{val.name}</div>
+	   								<div className="usong-r-l-2">{val.ar[0].name}-{val.al.name}</div>
+	   							</div>
+	   							<div className="usong-r-r">
+	   								<span></span>
+	   							</div>
+	   						</div>
+   					</Link>
    				)
    			})
    			//精彩评论

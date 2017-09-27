@@ -1,5 +1,6 @@
 import NavMusic from './NavMusic'
 import Fetch from '../modules/fetch'
+import {Link} from 'react-router'
 
 class SearchMusic extends React.Component {
 	constructor(props, context) {
@@ -132,7 +133,7 @@ class SearchMusic extends React.Component {
 		let arr = []
 		if(this.state.searchSongs) {
 			this.state.searchSongs.forEach((item, i) => {
-				arr.push(<a>
+				arr.push(<Link to={"/song/"+item.id}>
 						<div className="songBox">
 							<div className="songBox-left">
 								<h5><span>{item.songname}</span></h5>
@@ -142,7 +143,7 @@ class SearchMusic extends React.Component {
 								<i className="icon icon-play"></i>
 							</div>
 						</div>
-					</a>)
+					</Link>)
 			})
 		}
 		return arr

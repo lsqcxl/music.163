@@ -8,7 +8,8 @@ html, body {
   height: 100%; }
 
 body {
-  font-size: 16px; }
+  font-size: 16px;
+  background: #fbfcfd; }
 
 li {
   list-style: none; }
@@ -23,7 +24,7 @@ img {
   width: 100%;
   height: auto;
   background: #fbfcfc;
-  margin-top: 104px; }
+  padding-top: 104px; }
 
 a {
   text-decoration: none;
@@ -342,7 +343,7 @@ a {
   .hotSongs a .songBox {
     flex: 1;
     padding: 6px 0;
-    border-bottom: 1px solid #f5f5f5;
+    border-bottom: 1px solid #efefef;
     display: flex; }
     .hotSongs a .songBox .icon {
       background: url("http://s3.music.126.net/m/s/img/index_icon_2x.png?5207a28c3767992ca4bb6d4887c74880") no-repeat;
@@ -577,8 +578,10 @@ a {
   line-height: 19px;
   color: #666; }
 
+.play-list .xiaxia {
+  -webkit-line-clamp: 3; }
+
 .play-list .intro-3 {
-  -webkit-line-clamp: 3;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -586,6 +589,19 @@ a {
   word-wrap: break-word;
   word-break: break-all;
   white-space: normal; }
+  .play-list .intro-3 i {
+    position: absolute;
+    bottom: 3px;
+    right: 0;
+    z-index: 3;
+    width: 15px;
+    height: 15px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 12px auto;
+    background-image: url(/img/xia.png); }
+  .play-list .intro-3 .shang {
+    background-image: url(/img/shang.png); }
 
 .play-list .play-list h3 {
   height: 23px;
@@ -826,3 +842,451 @@ a {
   transform-origin: top left;
   border: 0 solid rgba(0, 0, 0, 0.1);
   border-top-width: 1px; }
+
+.app-main {
+  width: 100%;
+  height: 100%; }
+  .app-main .m-uvl {
+    width: 100%;
+    height: 100%;
+    background: url(http://p3.music.126.net/3PJacreCq-eDuVDU4RFTQA==/18935789253812331.jpg) no-repeat 0 center;
+    background-size: 100% auto !important; }
+  .app-main .wrap {
+    margin-top: -40px;
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .app-main .logo {
+    margin: 0 auto;
+    width: 108px;
+    height: 108px;
+    background: url(http://p3.music.126.net/tBTNafgjNnTL1KlZMt7lVA==/18885211718935735.jpg) no-repeat 0 0;
+    background-size: 100% auto; }
+  .app-main a {
+    margin-top: 40px;
+    display: block;
+    width: 188px;
+    height: 46px;
+    line-height: 46px;
+    background: #311412;
+    border: 1px solid #7c6a69;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center; }
+
+.searForm {
+  padding: 15px 10px;
+  border-bottom: 1px solid #f5f5f5; }
+  .searForm .searBox {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    background: #ebecec;
+    border-radius: 30px; }
+    .searForm .searBox i {
+      display: inline-block;
+      vertical-align: middle;
+      width: 13px;
+      height: 13px;
+      background: url("/img/sear.svg") no-repeat 0 0;
+      background-size: contain;
+      position: absolute;
+      left: 8px;
+      top: 9px; }
+    .searForm .searBox input {
+      width: 100%;
+      height: 30px;
+      line-height: 18px;
+      background: transparent;
+      font-size: 14px;
+      color: #333;
+      border: none;
+      outline: none; }
+    .searForm .searBox figure {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 30px;
+      height: 30px;
+      line-height: 28px;
+      text-align: center; }
+      .searForm .searBox figure e {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background: url("/img/close.svg") no-repeat;
+        background-size: contain; }
+
+.hotSearch {
+  padding: 15px 10px 0; }
+  .hotSearch h5 {
+    font-size: 12px;
+    line-height: 12px;
+    color: #666;
+    font-weight: normal; }
+  .hotSearch ul {
+    margin: 10px 0 7px; }
+    .hotSearch ul li {
+      display: inline-block;
+      height: 32px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+      padding: 0 14px;
+      font-size: 14px;
+      line-height: 32px;
+      color: #333;
+      border: 1px solid #ddd;
+      border-radius: 30px; }
+
+.songsHistory li {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 45px; }
+  .songsHistory li i {
+    margin: 0 10px;
+    width: 15px;
+    height: 15px;
+    background: url("/img/history.svg") no-repeat;
+    background-size: contain; }
+  .songsHistory li div {
+    flex: 1;
+    display: flex;
+    height: 45px;
+    border-bottom: 1px solid #efefef;
+    align-items: center; }
+    .songsHistory li div span {
+      flex: 1;
+      font-size: 14px; }
+    .songsHistory li div figure {
+      width: 32px;
+      height: 32px;
+      line-height: 32px; }
+      .songsHistory li div figure e {
+        display: inline-block;
+        margin-left: 2px;
+        width: 12px;
+        height: 13px;
+        background: url("/img/remove.svg") no-repeat;
+        background-size: contain; }
+
+.songsPart h3 {
+  height: 50px;
+  margin-left: 10px;
+  padding-right: 10px;
+  font-size: 15px;
+  line-height: 50px;
+  color: #507daf; }
+
+.songsPart ul li {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 45px;
+  padding-left: 10px; }
+  .songsPart ul li i {
+    margin-right: 7px;
+    width: 15px;
+    height: 15px;
+    background: url("/img/sear.svg") no-repeat;
+    background-size: contain; }
+  .songsPart ul li span {
+    flex: 1;
+    height: 100%;
+    line-height: 45px;
+    border-bottom: 1px solid #efefef;
+    font-size: 15px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+
+.songsList {
+  padding-left: 10px; }
+  .songsList .songBox {
+    flex: 1;
+    padding: 6px 0;
+    border-bottom: 1px solid #efefef;
+    display: flex; }
+    .songsList .songBox .icon {
+      background: url("http://s3.music.126.net/m/s/img/index_icon_2x.png?5207a28c3767992ca4bb6d4887c74880") no-repeat;
+      background-size: 166px 97px; }
+    .songsList .songBox .songBox-left {
+      flex: 1; }
+      .songsList .songBox .songBox-left h5 {
+        font-size: 17px;
+        font-weight: normal;
+        overflow: hidden;
+        color: #507daf; }
+        .songsList .songBox .songBox-left h5 span {
+          float: left; }
+      .songsList .songBox .songBox-left p {
+        font-size: 12px;
+        color: #888;
+        height: 17px;
+        overflow: hidden; }
+        .songsList .songBox .songBox-left p .icon-SQ {
+          display: inline-block;
+          width: 12px;
+          height: 8px;
+          margin-right: 4px; }
+    .songsList .songBox .songBox-right {
+      width: 42px;
+      height: 42px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .songsList .songBox .songBox-right .icon-play {
+        width: 22px;
+        height: 22px;
+        background-position: -24px 0; }
+
+.login-box .logo {
+  padding-top: 16.9%; }
+
+.login-box .logosvg, .login-box .content-block {
+  display: block;
+  margin: 0 auto;
+  width: 230px;
+  height: 44px; }
+
+.login-box .logi {
+  display: block;
+  margin: 0 auto;
+  width: 230px;
+  margin-top: 20px;
+  text-align: center;
+  color: #888888;
+  font-size: 20px; }
+
+.login-box .list-block {
+  margin: 0 auto;
+  width: 230px;
+  padding: 20px; }
+  .login-box .list-block input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 15px;
+    border: 1px solid skyblue;
+    border-radius: 10px;
+    height: 25px;
+    outline: none; }
+
+.login-box .row {
+  overflow: hidden; }
+
+.login-box .col-50:first-child {
+  margin-left: 0; }
+
+.login-box .col-50 {
+  width: 80px;
+  background-color: lightskyblue;
+  border-radius: 20px;
+  line-height: 40px;
+  text-align: center;
+  height: 40px;
+  margin-left: 20px;
+  float: left;
+  color: black;
+  cursor: pointer; }
+
+.login-box .red {
+  background-color: skyblue; }
+
+.login-box .green {
+  background-color: skyblue; }
+
+.login-box .register {
+  margin-top: 20px;
+  background-color: lightskyblue;
+  width: 200px;
+  font-size: 14px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+  color: #999; }
+
+.login-box .whitered {
+  color: red; }
+
+.login-box .uname, .login-box .upass {
+  display: none; }
+
+.songBg {
+  background: url("http://p4.music.126.net/-l2rk74khHZkFNyDaQU1Fw==/17639465044486775.jpg") no-repeat;
+  background-size: auto 100%;
+  height: 100%;
+  width: 100%; }
+  .songBg:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .songBg .songTop {
+    padding-top: 70px; }
+
+@keyframes circle {
+  from {
+    transform: rotate(0); }
+  to {
+    transform: rotate(360deg); } }
+    .songBg .songTop .songdis {
+      width: 296px;
+      height: 296px;
+      margin: 0 auto;
+      background: url("http://s3.music.126.net/m/s/img/disc_light-ip6.png?996fc8a2bc62e1ab3f51f135fc459577");
+      background-size: contain;
+      position: relative;
+      overflow: hidden; }
+      .songBg .songTop .songdis:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: url("http://s3.music.126.net/m/s/img/disc-ip6.png?69796123ad7cfe95781ea38aac8f2d48") no-repeat;
+        background-size: contain;
+        z-index: 2; }
+      .songBg .songTop .songdis .songImg {
+        position: absolute;
+        width: 184px;
+        height: 184px;
+        left: 50%;
+        top: 50%;
+        margin: -92px;
+        border-radius: 50%;
+        overflow: hidden;
+        z-index: 1; }
+        .songBg .songTop .songdis .songImg img {
+          width: 100%;
+          animation: circle 20s linear infinite; }
+      .songBg .songTop .songdis:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: url("http://s3.music.126.net/m/s/img/disc_light-ip6.png?996fc8a2bc62e1ab3f51f135fc459577") no-repeat;
+        background-size: contain;
+        z-index: 3;
+        animation: circle 20s linear infinite; }
+    .songBg .songTop:after {
+      content: " ";
+      display: block;
+      width: 96px;
+      height: 137px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -15px;
+      background: url("http://s3.music.126.net/m/s/img/needle-ip6.png?be4ebbeb6befadfcae75ce174e7db862") no-repeat;
+      background-size: contain;
+      z-index: 2; }
+  .songBg .songInfo {
+    padding: 0 35px;
+    margin-top: 25px;
+    position: relative;
+    z-index: 2; }
+    .songBg .songInfo h2 {
+      text-align: center;
+      font-size: 12px;
+      line-height: 1.1;
+      color: #fefefe;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-weight: normal;
+      margin-bottom: 30px; }
+      .songBg .songInfo h2 span {
+        font-size: 18px; }
+      .songBg .songInfo h2 i {
+        margin: 0 2px; }
+      .songBg .songInfo h2 b {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.6); }
+    .songBg .songInfo .songLrcWrap {
+      margin-top: 14px;
+      position: relative;
+      overflow: hidden;
+      height: 92px; }
+      .songBg .songInfo .songLrcWrap .songLrc {
+        position: absolute;
+        top: 0; }
+        .songBg .songInfo .songLrcWrap .songLrc p {
+          padding-bottom: 6px;
+          color: rgba(255, 255, 255, 0.6);
+          font-size: 16px;
+          text-align: center; }
+          .songBg .songInfo .songLrcWrap .songLrc p span {
+            display: block;
+            line-height: 1.2; }
+          .songBg .songInfo .songLrcWrap .songLrc p span:nth-child(2) {
+            line-height: 24px; }
+  .songBg .songBottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 7; }
+    .songBg .songBottom .progressBox {
+      width: 100%;
+      height: 40px;
+      display: flex;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.4); }
+      .songBg .songBottom .progressBox .timePlayed {
+        width: 55px;
+        line-height: 40px;
+        text-align: center; }
+      .songBg .songBottom .progressBox .progressWrap {
+        flex: 1;
+        position: relative; }
+        .songBg .songBottom .progressBox .progressWrap .progress {
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          top: 19px;
+          background: rgba(255, 255, 255, 0.4); }
+          .songBg .songBottom .progressBox .progressWrap .progress .progressPlayed {
+            position: absolute;
+            width: 0px;
+            height: 2px;
+            background: red;
+            top: 0;
+            left: 0; }
+          .songBg .songBottom .progressBox .progressWrap .progress .progressCircle {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: yellow;
+            top: -6px;
+            left: -6px; }
+      .songBg .songBottom .progressBox .timeTotal {
+        width: 55px;
+        line-height: 40px;
+        text-align: center; }
+    .songBg .songBottom .musicIcon {
+      width: 100%;
+      height: 40px;
+      padding-bottom: 10px;
+      display: flex;
+      font-size: 25px;
+      color: #fff;
+      justify-content: space-around; }
+      .songBg .songBottom .musicIcon span {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 25px; }
+        .songBg .songBottom .musicIcon span:nth-child(3) {
+          font-size: 40px; }

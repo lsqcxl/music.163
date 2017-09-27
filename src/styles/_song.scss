@@ -1,0 +1,227 @@
+.songBg{
+    background:url("http://p4.music.126.net/-l2rk74khHZkFNyDaQU1Fw==/17639465044486775.jpg") no-repeat;
+    background-size: auto 100%;
+    height: 100%;
+    width: 100%;
+    
+    &:after{
+        content: " ";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background-color: rgba(0,0,0,.5);
+        }
+    .songTop{
+        padding-top: 70px;
+        
+         @keyframes circle {
+             from { transform: rotate(0) }
+             to { transform: rotate(360deg) }
+         }
+         
+         
+         
+        .songdis{
+             width: 296px;
+             height: 296px;
+             margin: 0 auto;
+             background: url("http://s3.music.126.net/m/s/img/disc_light-ip6.png?996fc8a2bc62e1ab3f51f135fc459577");
+             background-size: contain;
+             position: relative;
+             overflow: hidden;
+             
+             
+             &:before{
+                 content: '';
+                 display: block;
+                 width: 100%;
+                 height: 100%;
+                 position: absolute;
+                 background: url("http://s3.music.126.net/m/s/img/disc-ip6.png?69796123ad7cfe95781ea38aac8f2d48") no-repeat;
+                 background-size: contain;
+                 z-index: 2;
+             }
+            .songImg{
+                position: absolute;
+                width: 184px;
+                height: 184px;
+                left:50%;
+                top:50%;
+                margin:-92px;
+                border-radius: 50%;
+                overflow: hidden;
+                z-index: 1;
+                
+                 img{
+                     width: 100%;
+                     animation: circle 20s linear infinite;
+                 }
+            }
+             &:after{
+                 content: '';
+                 display: block;
+                 width: 100%;
+                 height: 100%;
+                 position: absolute;
+                 background: url("http://s3.music.126.net/m/s/img/disc_light-ip6.png?996fc8a2bc62e1ab3f51f135fc459577") no-repeat;
+                 background-size: contain;
+                 z-index: 3;
+                 animation: circle 20s linear infinite;
+                 
+             }
+             
+        }
+        &:after{
+            content: " ";
+            display: block;
+            width: 96px;
+            height: 137px;
+            position: absolute;
+            top:0;
+            left: 50%;
+            margin-left: -15px;
+            background: url("http://s3.music.126.net/m/s/img/needle-ip6.png?be4ebbeb6befadfcae75ce174e7db862") no-repeat;
+            background-size: contain;
+            z-index: 2;
+        }
+    }
+    
+    .songInfo{
+        padding: 0 35px;
+        margin-top: 25px;
+        position: relative;
+        z-index: 2;
+
+        h2{
+            text-align: center;
+            font-size: 12px;
+            line-height: 1.1;
+            color: #fefefe;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-weight: normal;
+            margin-bottom: 30px;
+            span{
+            font-size: 18px;
+                
+            }
+            i{
+                margin: 0 2px;
+            }
+            b{
+                font-size: 16px;
+                color: hsla(0,0%,100%,.6);
+            }
+        }
+       .songLrcWrap{
+           margin-top: 14px;
+           position: relative;
+           overflow: hidden;
+           height: 92px;
+           
+           .songLrc{
+               position: absolute;
+               top: 0;
+           
+               p{
+                    padding-bottom: 6px;
+                    color: hsla(0,0%,100%,.6);
+                    font-size: 16px;
+                    text-align: center;
+                    
+                    span{
+                        display: block;
+                        line-height: 1.2;
+                        
+                    }
+                    span:nth-child(2){
+                        line-height: 24px;
+                    }
+               }
+           }
+       }
+    }
+    
+    .songBottom{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 7;
+        
+        .progressBox{
+            width: 100%;
+            height: 40px;
+            display: flex;
+            font-size: 14px;
+            color: rgba(255,255,255,.4);
+            
+            .timePlayed{
+                width: 55px;
+                line-height: 40px;
+                text-align: center;
+            }
+            .progressWrap{
+                flex: 1;
+                position: relative;
+                
+                .progress{
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    top:19px;
+                    background: rgba(255,255,255,.4);
+                    
+                    .progressPlayed{
+                        position: absolute;
+                        width: 0px;
+                        height: 2px;
+                        background:red;
+                        top:0;
+                        left: 0;
+                    }
+                    
+                    .progressCircle{
+                        position: absolute;
+                        width: 14px;
+                        height: 14px;
+                        border-radius: 50%;
+                        background: yellow;
+                        top:-6px;
+                        left: -6px;
+                    }
+                }
+            }
+            .timeTotal{
+                width: 55px;
+                line-height: 40px;
+                text-align: center;
+            }
+        }
+        
+        .musicIcon{
+            width: 100%;
+            height: 40px;
+            padding-bottom: 10px;
+            display: flex;
+            font-size: 25px;
+            color: #fff;
+            justify-content: space-around;
+            
+            span{
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                font-size: 25px;
+                
+                &:nth-child(3){
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}

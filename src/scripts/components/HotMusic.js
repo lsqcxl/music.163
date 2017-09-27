@@ -1,6 +1,6 @@
 import NavMusic from './NavMusic'
 import Fetch from '../modules/fetch'
-
+import {Link} from 'react-router'
 class HotMusic extends React.Component {   
     constructor(props,context){
         super(props,context)
@@ -13,7 +13,6 @@ class HotMusic extends React.Component {
     getHotSongs(){
     		let that = this
     		Fetch.Get("./json/hotSong.json",{}).then((res)=>{return res.json()}).then((json)=>{
-//  			console.log(json.playlist.tracks)
     			that.setState({
     				hotSongs:json.playlist.tracks
     			})
@@ -24,7 +23,7 @@ class HotMusic extends React.Component {
     		let arr = []
     		if(hotSongs){
     			hotSongs.forEach((item,i)=>{
-    				arr.push(<a>
+    				arr.push(<Link to={"/song/"+item.id}>
 						<div className={(i==0||i==1||i==2)?"songInd red":"songInd"}>{(i+1)>=10?i+1:"0"+(i+1)}</div>
 						<div className="songBox">
 							<div className="songBox-left">
@@ -35,7 +34,7 @@ class HotMusic extends React.Component {
 								<i className="icon icon-play"></i>
 							</div>
 						</div>
-					</a>)
+					</Link>)
     			})
     		}
     		return arr
@@ -70,3 +69,4 @@ HotMusic .defaultProps={
 
 
 export default HotMusic
+
