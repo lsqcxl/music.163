@@ -8369,7 +8369,7 @@ var Song = function (_React$Component) {
 						React.createElement("span", { className: "iconfont icon-icon" })
 					)
 				),
-				React.createElement("audio", { id: "music-audio", "class": "audio", loop: true, autoplay: "autoplay", src: this.state.songUrl })
+				React.createElement("audio", { id: "music-audio", className: "audio", loop: true, autoplay: "autoplay", src: this.state.songUrl })
 			);
 		}
 	}]);

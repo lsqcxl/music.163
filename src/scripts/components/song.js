@@ -212,7 +212,7 @@ class Song extends React.Component {
 						<span className="iconfont icon-icon"></span>
 					</div>
 				</div>
-				<audio id="music-audio" class="audio" loop autoplay="autoplay" src={this.state.songUrl}></audio>
+				<audio id="music-audio" className="audio" loop autoplay="autoplay" src={this.state.songUrl}></audio>
 			</div>
 		)
 	}
